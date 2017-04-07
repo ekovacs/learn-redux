@@ -12,7 +12,7 @@ function posts(state = [], action) {
         ...state.slice(0, i), 
 
       { 
-        /* creating a new object: containing the: spreading the unmodified part of the object, and the likes incremented */
+        /* creating a new object, containing the: spreading the unmodified part of the object, and the likes incremented */
         ...state[i], likes: state[i].likes + 1 
       },
         // speading the last part of the state array, after the modified one
