@@ -11,7 +11,7 @@ export function decrement(index) {
     type: DECREMENT_LIKES,
     index
   }
-}
+};
 // add comment
 export function addComment(postId, author, comment) {
   return {
@@ -24,10 +24,10 @@ export function addComment(postId, author, comment) {
 
 
 // remove comment
-export function removeComment(postId, id) {
+export function removeComment(postId, index) {
   return {
     type: 'REMOVE_COMMENT',
-    postid,
-    id
+    postId,
+    index
   }
-}
+};
